@@ -1,23 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <title>Hello World</title>
+    <script src="//unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="//unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   </head>
+
   <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      ReactDOM.createRoot(document.getElementById('root')).render(
+        React.createElement('h1', null, 'Hello world!')
+      );
+    </script>
   </body>
 </html>
